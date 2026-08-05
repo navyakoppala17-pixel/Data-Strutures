@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char exp[100];
+    int i = 0;
+
+    printf("Enter expression: ");
+    scanf("%s", exp);
+
+    printf("Operands are: ");
+
+    while(exp[i]) {
+        if(isalnum(exp[i]))
+            printf("%c ", exp[i]);
+        i++;
+    }
+
+    return 0;
+}
